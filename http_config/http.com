@@ -8,10 +8,16 @@ server {
         }
     }
 
-    location /test {
+    location /spike-web {
         default_type text/plain;
-            proxy_pass http://web;
+            proxy_pass http://spike-web;
     }
+
+    location /spike-support {
+        default_type text/plain;
+            proxy_pass http://spike-support;
+    }
+
 }
 
 
