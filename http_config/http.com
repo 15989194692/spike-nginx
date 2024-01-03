@@ -15,7 +15,7 @@ server {
 
     location /spike-support {
         default_type text/plain;
-            proxy_pass http://spike-support;
+            proxy_pass http://spike-support/;
     }
 
 }
